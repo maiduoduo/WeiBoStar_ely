@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <cn.star.weibo.view.MineTitleBar
+        android:id="@+id/title_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_bar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mine_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/ll_mine_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_bg"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                   <!-- <cn.star.weibo.view.CircleImageView
+                        android:id="@+id/circleIv_top"
+                        android:layout_margin="5dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/avator_default" />-->
+
+                    <ImageView
+                        android:id="@+id/circleIv_top"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/avator_default" />
+
+                    <!--个人信息栏-->
+                    <LinearLayout
+                        android:layout_weight="3.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:background="@drawable/selector_item_click"
+                        android:layout_toRightOf="@id/circleIv_top"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_mine_item_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:text="@string/mine_top_name"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/tv_mine_item_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_marginTop="10dp"
+                            android:textSize="13sp"
+                            android:ellipsize="end"
+                            android:text="@string/mine_top_des"
+                            android:textColor="@color/middleblack" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/tab_select"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:drawableLeft="@drawable/avatar_vip_icon"
+                        android:drawableRight="@drawable/timeline_rightarrow_hignlight"
+                        android:text="会员"/>
+
+                </LinearLayout>
+
+                <!--微博、关注、粉丝数量显示栏-->
+
+                <LinearLayout
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_weibo_info"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_mine_weibo_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="428"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/middleblack"
+                            android:gravity="center_vertical"
+                            android:text="微博"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_concert_info"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_mine_concert_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="88"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/middleblack"
+                            android:gravity="center_vertical"
+                            android:text="关注"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_fan_info"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_mine_fan_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="1888"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/middleblack"
+                            android:gravity="center_vertical"
+                            android:text="粉丝"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/fragment_mine_item"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

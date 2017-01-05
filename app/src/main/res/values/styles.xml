@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Theme.Global" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/top_bar</item>
+        <item name="colorPrimaryDark">@color/top_bar</item>
+    </style>
+
+
+    <!--主界面的add按钮打开页面的方式-->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_buttom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_buttom_out</item>
+    </style>
+    <!--界面跳转的方式-->
+    <style name="RejustAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/zoomin</item>
+        <item name="android:windowExitAnimation">@anim/zoomout</item>
+    </style>
+    <style name="MyActivityStyle" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/RejustAnimation</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--popupMenu-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 登录web界面界面样式-->
+    <style name="WeiBoHoloWindowTranslucent" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--用户详情标签样式-->
+    <style name="MyTabLayoutTextAppearanceInverse" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/indicate_line</item>
+    </style>
+
+    <!-- <style name="mine_style" parent="Theme.AppCompat.Light">
+         <item name="layout_width">match_parent</item>
+         <item name="layout_height">40dp</item>
+         <item name="textColor">@color/black</item>
+         <item name="clickable">true</item>
+         <item name="background">@drawable/selector_item_click</item>
+         <item name="textSize">15sp</item>
+         <item name="layout_marginLeft">10dp</item>
+         <item name="layout_marginRight">10dp</item>
+         <item name="gravity">center_vertical</item>
+         <item name="drawablePadding">10dp</item>
+     </style>-->
+
+    <style name="ArrowDialog" parent="android:style/Theme.Dialog">
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否阴影变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <!-- 图片详情页，长按的动画 -->
+    <style name="image_option_pop_window_anim_style">
+        <item name="android:windowEnterAnimation">@anim/home_image_detail_list_pop_window_in</item>
+        <item name="android:windowExitAnimation">@anim/home_image_detail_list_pop_window_out</item>
+    </style>
+
+
+</resources>

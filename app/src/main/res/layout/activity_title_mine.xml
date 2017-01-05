@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_mine_title_left"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="@color/middleblack"
+            android:text="添加好友"/>
+        <TextView
+            android:id="@+id/tv_mine_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="尼古拉斯丶赵四"
+            android:padding="2dp"
+            android:textColor="@color/middleblack"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_mine_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/middleblack"
+            android:gravity="center"
+            android:layout_marginRight="15dip"
+            android:text="设置"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

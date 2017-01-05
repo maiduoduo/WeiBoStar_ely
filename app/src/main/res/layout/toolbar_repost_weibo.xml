@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/topbar_bg">
+
+    <TextView
+        android:id="@+id/idea_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="取消"
+        android:textColor="@color/toolbar_textview_background_auto"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/compose_toolbar_foldername_auto"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/inputType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转发微博"
+            android:textColor="#545454"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/idea_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MaYun"
+            android:textColor="#b6b6b6"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/idea_send"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/compose_send_corners_bg"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="#b3b3b3"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/topbar_bottom_drive"/>
+</RelativeLayout>

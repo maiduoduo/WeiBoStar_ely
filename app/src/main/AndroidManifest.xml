@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.star.weibo">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+
+    <!--微博API接入权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name=".base.MApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Base">
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/MyActivityStyle"/>
+        <activity android:name=".unlogin.activity.UnLoginActivity"/>
+        <activity android:name=".unlogin.activity.WebViewActivity"/>
+        <!--设置界面-->
+        <activity android:name=".login.mine.activity.SettingActivity"
+            android:theme="@style/MyActivityStyle"/>
+        <!--首页图片详情页-->
+        <activity android:name=".login.home.activity.ImageDetailsActivity"
+            android:theme="@style/MyActivityStyle"/>
+        <!--首页点击微博内容的详情页面-->
+        <activity android:name=".login.home.activity.OriginDetailActivity"
+            android:theme="@style/MyActivityStyle"/>
+        <!--微博背景的点击事件的详情页-->
+        <activity android:name=".login.home.activity.RetweetDetailActivity"
+            android:theme="@style/MyActivityStyle"/>
+        <!--首页转发微博界面-->
+        <activity android:name=".login.home.activity.RePostWeiboActivity"
+            android:theme="@style/MyActivityStyle"/>
+        <!--用户界面1-->
+        <activity android:name=".login.mine.activity.UserActivity"
+            android:theme="@style/MyActivityStyle"/>
+        <!--用户相册界面-->
+        <activity android:name=".login.add.activity.AlbumActivity"
+            android:theme="@style/MyDialogStyleBottom"/>
+
+
+        <!--主界面底部tabbar_add按钮激活的界面-->
+        <activity
+            android:name=".login.add.activity.AddActivity"
+            android:theme="@style/MyDialogStyleBottom"/>
+
+        <!--未登录：主界面底部tabbar_add按钮激活的界面-->
+        <activity
+            android:name=".unlogin.activity.PostActivity"
+            android:theme="@style/MyDialogStyleBottom"/>
+
+        <!--微博API接入-->
+        <!-- 登录web界面-->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/WeiBoHoloWindowTranslucent">
+        </activity>
+
+        <!-- 手机短信注册页面 -->
+        <activity
+            android:name="com.sina.weibo.sdk.register.mobile.MobileRegisterActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 注册选择国家页面 -->
+        <activity
+            android:name="com.sina.weibo.sdk.register.mobile.SelectCountryActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+
+
+    </application>
+
+</manifest>

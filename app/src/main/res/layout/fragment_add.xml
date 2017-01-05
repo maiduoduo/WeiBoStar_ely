@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uxin_call_sdk_incall_backgroud_bg"
+    android:fitsSystemWindows="true">
+
+
+    <ImageView
+        android:id="@+id/iv_compose_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:src="@drawable/compose_slogan" />
+
+
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/rl_add_first"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/addLayoutBg">
+
+        <ImageButton
+            android:id="@+id/ibn_add_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:background="@color/addLayoutBg"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tabbar_compose_background_icon_close" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_add_nextpop"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="@color/addLayoutBg">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/ibn_add_pre"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/addLayoutBg"
+            android:layout_centerInParent="true"
+            android:src="@drawable/navigationbar_back_highlighted" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/ibn_add_closenext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/addLayoutBg"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tabbar_compose_background_icon_close" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+

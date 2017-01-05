@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mine_user_detail_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/cover_image"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/cover_image"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_user_detail_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/avator_default"/>
+        <LinearLayout
+            android:id="@+id/ll_user_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_user_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/middleblack"
+                android:text="User"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/userinfo_icon_male"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/avatar_vip_open"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user_detail_concert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:text="关注"/>
+            <TextView
+                android:id="@+id/tv_user_detail_concertnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@id/tv_user_detail_concert"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="300"/>
+
+            <TextView
+                android:id="@+id/tv_divider"
+                android:layout_toRightOf="@id/tv_user_detail_concertnum"
+                android:layout_width="2dp"
+                android:layout_height="15dp"
+                android:background="@color/white"
+                android:layout_marginLeft="15dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_user_detail_fan"
+                android:layout_toRightOf="@id/tv_divider"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:text="粉丝"/>
+            <TextView
+                android:id="@+id/tv_user_detail_fanname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@id/tv_user_detail_fan"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="666"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="5"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user_detail_des"
+                android:layout_weight="4.5"
+                android:layout_width="0dp"
+                android:lines="1"
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:text="简介：在苍茫的大地上有许许多多的万物，让他们自由自在的生长吧"/>
+
+            <ImageView
+                android:id="@+id/iv_user_detail_moreinfo"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/avatar_user_pencil"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/activity_user_details_item"/>
+    </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

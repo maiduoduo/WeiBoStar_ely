@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+
+    }
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+    defaultConfig {
+        applicationId "cn.star.weibo"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+//        sourceSets {
+//            main {
+//                jniLibs.srcDirs = ['libs']
+//            }
+//        }
+
+        ndk {
+            abiFilters 'armeabi','x86'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile files('libs/rebound-0.3.8.jar')
+    compile project(':weiboSDK')
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/gson-2.2.1.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile 'com.cesards.android:cropimageview:1.0.2.1'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.17'
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.5.0'
+    compile project(':swipebacklayout')
+    compile files('libs/photoview-library-1.2.2.jar')
+}

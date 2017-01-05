@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="大家正在搜 : 夫妻同时爱上一名女大学生"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:background="#ccc"
+        android:textColor="#66000000"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/tabbar_discover"
+        />
+
+
+
+
+
+
+</RelativeLayout>

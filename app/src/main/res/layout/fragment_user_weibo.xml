@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg"
+            android:gravity="center_vertical"
+            android:padding="2dp">
+            <TextView
+                android:id="@+id/tv_mine_user_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:text="全部微博(180)"
+                android:textColor="@color/user_detail_weibo"/>
+
+            <TextView
+                android:id="@+id/tv_mine_user_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:clickable="true"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/userinfo_icon_screening"
+                android:drawablePadding="5dp"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="筛选"
+                android:textColor="@color/user_detail_choice"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_mine_detail_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="1dp"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

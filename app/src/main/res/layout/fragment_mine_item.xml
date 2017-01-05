@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:background="@drawable/selector_item_click"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profiles_1"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="新的好友"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/selector_item_click"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_2"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="我的相册"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:background="@drawable/selector_item_click"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_08"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="粉丝服务"
+            android:id="@+id/textView2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:background="@drawable/selector_item_click"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_4"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="我的赞"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:background="@drawable/selector_item_click"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_04"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="微博钱包"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:background="@drawable/selector_item_click"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_6"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="微博运动"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:background="@drawable/selector_item_click"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_8"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="粉丝头条"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="1dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:background="@drawable/selector_item_click"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_3"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="我的点评"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/selector_item_click"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_9"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="草稿箱"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:background="@drawable/selector_item_click"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/profile_10"
+            android:drawableRight="@drawable/timeline_rightarrow"
+            android:text="更多"
+            android:id="@+id/textView4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:background="@color/main_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:layout_height="8dp"/>
+
+</LinearLayout>
+
+
