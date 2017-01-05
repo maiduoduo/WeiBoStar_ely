@@ -112,3 +112,8 @@
 - 设置按钮：跳转设置界面
 
 ![image](https://github.com/maiduoduo/WeiBoStar_ely/blob/master/images/S70105-23.jpg)
+
+
+### 部分功能及逻辑布局实现，之后会对bug,界面，数据，逻辑进行深层优化，未完待续。
+####其中用到的框架，逻辑，会在后边进行解析update.
+--
