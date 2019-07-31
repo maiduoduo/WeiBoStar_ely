@@ -1,5 +1,10 @@
 # WeiBoStar_ely
 ##新浪微博第三方客户端，集成官方文档开源部分数据接入与展现。
+
+###声明：     
+  >  目前本系统已不再维护，Oauth2.0认证现在已经改变，微博官方接入也发生变化，内容数据上目前获取不到，请慎重参考。
+
+
 --------
 ###用户首页：加载公众微博及关注微博：
 ![image](https://github.com/maiduoduo/WeiBoStar_ely/blob/master/images/S70105-1.jpg)
